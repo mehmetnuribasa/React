@@ -1,0 +1,10 @@
+.carlist-container button {
+    background-color: rgb(36, 154, 193);
+    color: white;
+    padding: 10px 21px;
+    border-radius: 8px;
+    border: 1px solid  rgb(75, 128, 203);;
+    cursor: pointer;
+  
+    margin: 5px;
+  }

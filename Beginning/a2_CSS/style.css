@@ -1,0 +1,100 @@
+h1 {
+    color: blueviolet;
+    background-color: aqua;
+}
+
+body {
+    color: aliceblue;
+    background-color: black;
+}
+
+div {
+    color: aliceblue;
+    border: 1px dashed red; /* edge */
+    background-color: cadetblue;
+
+    /* location */
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 150px;
+    margin-bottom: auto;
+
+    /* inner distance from edge */
+    padding: 10px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+table, th, td {
+    color: aliceblue;
+    border: 1px solid purple;
+}
+
+th {
+    height: 40px;
+}
+
+td {
+    height: 30px;
+    text-align: left;
+    vertical-align: bottom;
+    padding-left: 15px;
+}
+
+/* when i came to on its with mause */
+tr :hover{
+    background-color: dimgray;
+}
+
+/* tr :nth-child(even) {
+    background-color: aqua;
+}
+
+tr :nth-child(odd) {
+    background-color: aquamarine;
+} */
+
+
+
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 7px;
+    border: 2px solid green;
+    background-color: #3CBC8D;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: lightblue;
+}
+
+
+
+
+/* for class */
+.myClass {
+    color: black;
+    background-color: white;
+}
+
+.myClass:hover {
+    background-color: gray;
+}
+
+p.someClass {
+    color: blueviolet;
+    background-color: cadetblue;
+}
+
+/* for id */
+#email {
+    background-color: blueviolet;
+}

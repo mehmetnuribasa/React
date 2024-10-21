@@ -1,0 +1,47 @@
+.colorpicker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana;
+}
+
+.colorpicker-logo {
+    margin: 30px;
+    font-size: 3rem;
+    color: blueviolet;
+    font-family: Verdana;
+}
+
+.color-display {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid blueviolet;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    transition: 0.25s ease;
+}
+
+.color-display p {
+    font-size: 1em;
+    text-align: center;
+}
+
+.colorpicker-label {
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+.colorpicker-container input[type="color"] {
+    border-radius: 5px;
+    border: 3px solid burlywood;
+    padding: auto;
+    width: 75px;
+    height: 35px;
+}
+
+
+
