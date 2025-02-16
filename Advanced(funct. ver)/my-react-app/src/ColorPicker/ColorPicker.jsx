@@ -28,7 +28,6 @@ function ColorPicker() {
 
             <label className="colorpicker-label">Select a color: </label>
             <input type="color" value={color} onChange={handleColorChange}/>
-
         </div>
     );
 

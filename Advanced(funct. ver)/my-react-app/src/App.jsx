@@ -39,31 +39,43 @@ function App() {
       <Button />
       <Button2 />
       <ProfilePic />
-      <br />
+      <br /><hr />
+
       <Card />
       <Card />
       <Card />
       <Card />
       <Card />
       <Card />
+      <br /><hr />
+
       <Food />
+      <br /><hr />
+
       <Student name="Mehmet" age={25} isStudent={false}></Student>
       <Student name="Ali" age={15} isStudent={true}></Student>
       <Student></Student>
+      <br /><hr />
 
 
       {fruits.length > 0 && <List items = {fruits} category="Fruits"/>}
       {vegetables.length > 0 && <List items = {vegetables} category="Vegetables"/>}
+      <br /><br /><hr />
 
       <Counter />
-      <br /><br />
+      <br /><br /><hr />
+
       <Inputs></Inputs>
+      <br /><br /><hr />
 
       <ColorPicker />
-      <FavoriteCar /><br />
+      <br /><br /><hr />
 
-      <br /><br />
+      <FavoriteCar />
+      <br /><br /><hr />
+
       <CarLists></CarLists>
+      <br /><br /><hr />
 
       <Footer />
     </>

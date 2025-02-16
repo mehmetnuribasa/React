@@ -12,7 +12,9 @@ function CarList() {
 
         const newCar = {year: carYear, make: carMake, model: carModel};
 
-        setCars(c => [...c, newCar]);
+        if(carMake !== "" && carModel !== "") {
+            setCars(c => [...c, newCar]);
+        }
 
         setCarYear(new Date().getFullYear());
         setCarMake("");
@@ -44,6 +46,7 @@ function CarList() {
     return(
         <div className="carlist-container">
             <h2>List of Car Objects</h2>
+            <p>Double click for deleting an item</p>
             <ul>
                 {cars.map((tempCar, index) =>
                     <li key={index} onDoubleClick={() => handleRemoveCar(index)}>
@@ -51,14 +54,16 @@ function CarList() {
                     </li>
                 )}
             </ul>
-
-            <input type="number" value={carYear} onChange={handleYearChange}/><br />
-            <input type="text" value={carMake} onChange={handleMakeChange} placeholder="Enter car make"/><br />
-            <input type="text" value={carModel} onChange={handleModelChange} placeholder="Enter car model"/><br />
-            <button onClick={handleAddCar}>Add Car</button>
+            
+            <form action="">
+                <input type="number" value={carYear} onChange={handleYearChange} required/><br />
+                <input type="text" value={carMake} onChange={handleMakeChange} placeholder="Enter a car make" required/><br />
+                <input type="text" value={carModel} onChange={handleModelChange} placeholder="Enter a car model" required/><br />
+                <button  onClick={handleAddCar}>Add Car</button>
+            </form>
         </div>
     );
 
 }
 
-export default CarList
+export default CarList;

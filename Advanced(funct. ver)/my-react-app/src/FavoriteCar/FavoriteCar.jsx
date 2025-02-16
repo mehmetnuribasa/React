@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "./FavoriteCar.css";
 
 function FavoriteCar() {
     const [car, setCar] = useState({year: 2024, make: "Ford", model: "Mustang"});
@@ -43,7 +44,7 @@ function FavoriteCar() {
     // }
 
     return(
-        <div>
+        <div className="favorite-car">
             <p>Your favorite car is {car.year} {car.make} {car.model}.</p>
 
             <input type="number" value={car.year} onChange={handleYearChange}/><br />

@@ -1,5 +1,5 @@
-import style from './Student.module.css'
-import PropTypes from 'prop-types'
+import style from './Student.module.css';
+import PropTypes from 'prop-types';
 
 function Student(props) {
 
@@ -24,7 +24,6 @@ Student.defaultProps = {
     name: "Guest",
     age:0,
     isStudent: false,
-
 }
 
-export default Student
+export default Student;

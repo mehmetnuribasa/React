@@ -2,7 +2,8 @@
     font-family: Arial, sans-serif;
     font-size: 1em; /* 2em for 200%*/
     padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
 
     margin: 10px;
 }

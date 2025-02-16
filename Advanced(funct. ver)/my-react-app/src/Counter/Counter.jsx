@@ -9,7 +9,7 @@ function Counter() {
 
     //Using a function expression (or arrow function) ties the function directly to the current component's state and avoids any issues with hoisting or stale closures:
     //ARROW FUNCTİONS (true)
-    //Arrow functions do not create their own this context. Therefore, arrow functions inherit the this from the context in which they are written.
+    //Arrow functions do not create their own this context. Therefore, arrow functions inherit this from the context in which they are written.
     const increment = () => {
         setCount(count + 1);
     }
