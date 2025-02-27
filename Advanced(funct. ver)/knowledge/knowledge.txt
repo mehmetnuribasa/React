@@ -1,4 +1,6 @@
 npm create vite@latest
+(react, javascript)
+
 
 cd my-react-app
 npm install
