@@ -1,0 +1,62 @@
+on CMD
+creating a file:    touch (GitBash)
+                    echo. > example.txt(CMD)
+
+creating a folder:  mkdir
+
+removing a file:    del example.txt
+                    del /f example.txt  (If the file is read-only, force delete it:)
+
+removing a folder:  rmdir example
+                    rmdir /s example    (Deletes the folder and everything inside it.)
+
+----------------------------------------
+
+git init    (initiliaze a git repository, create .git)
+
+git status
+
+git add index.html  (add to the git repository)
+git add *.html
+git add .
+git rm --cached index.html  (remove from the git repository)
+
+-----------------
+git commit  (Allows you to write a detailed commit message.)
+(press esc, then 
+:wq -> right and quit, 
+:w! -> quit without saving)
+
+git commit -m "changed a file"  (add this commit)
+-----------------
+***Must use commit command after the add . comment***
+
+-------------------
+git branch name (create a new branch)
+git checkout name (switch branch)
+
+-----------------
+
+To pushing your repositorry to your GitHub, create a new repository on github then, follow steps
+
+git branch -M main
+git remote add origin https://github.com/mehmetnuribasa/myApp.git   (add the remote repo address by "origin" to your local repo. It provides the connection)
+
+git push -u origin main                 (push your local changes to remote repo)
+git push                                (this is enough for later pushes)
+---------------
+
+git pull                                (can pull everything down in another branches)
+
+----------------
+
+git clone  https://github.com/mehmetnuribasa/myApp.git  (for clonning)
+
+---------------
+
+
+git remote add origin https://github.com/mehmetnuribasa/myApp.git   (add the remote repo address by "origin" to your local repo. It provides the connection)
+
+git remote -v       (to display the connected remote repo address)
+
+git remote remove origin    (to stop the remote conncetion named "origin")
