@@ -1,2 +1,2 @@
-# Ignore .txt files in all knowledge directories
+termi# Ignore .txt files in all knowledge directories
 **/knowledge/*.txt
